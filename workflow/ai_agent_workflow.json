@@ -1,0 +1,42 @@
+{
+  "name": "New Agent",
+  "model": "alibaba/qwen3.5-35b-a3b",
+  "instructions": "You are a task planning and organizing agent when user asks for some projects identify all the steps required to complete the project then present them to the user. If user approves add them to their todolist app",
+  "credential": "__AI_GATEWAY_MANAGED__",
+  "tools": [
+    {
+      "type": "node",
+      "name": "Todoist",
+      "node": {
+        "nodeType": "n8n-nodes-base.todoistTool",
+        "nodeTypeVersion": 2.2,
+        "nodeParameters": {
+          "descriptionType": "manual",
+          "toolDescription": "Create a new task in the user's Todoist account using Quick Add. Use this tool whenever the user asks you to add, create, remember, remind them about, or track something as a task in Todoist.",
+          "authentication": "oAuth2",
+          "resource": "task",
+          "operation": "quickAdd",
+          "text": "={{ /*n8n-auto-generated-fromAI-override*/ $fromAI('Text', ``, 'string') }}",
+          "options": {}
+        }
+      }
+    }
+  ],
+  "skills": [],
+  "personalisation": {
+    "icon": "bot",
+    "gradient": {
+      "from": "#DA7200",
+      "to": "#00A9E7",
+      "angle": 275,
+      "fromStop": 23,
+      "toStop": 78
+    }
+  },
+  "memory": {
+    "enabled": true,
+    "storage": "n8n"
+  },
+  "mcpServers": [],
+  "integrations": []
+}
