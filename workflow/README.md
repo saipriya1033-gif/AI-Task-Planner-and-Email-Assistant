@@ -39,7 +39,6 @@ An AI-powered task planning assistant built using n8n, an AI model, and external
 5. The user can manage and track the tasks in Todoist.
 
 ## Repository Structure
-
 AI-Task-Planner-and-Email-Assistant/
 │
 ├── workflow/
