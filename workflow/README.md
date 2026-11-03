@@ -40,18 +40,12 @@ An AI-powered task planning assistant built using n8n, an AI model, and external
 
 ## Repository Structure
 
-```text
 AI-Task-Planner-and-Email-Assistant/
 │
 ├── workflow/
 │   └── ai_agent_workflow.json
 │
-├── screenshots/
-│
-├── documentation/
-│
 └── README.md
-```
 
 ## Learning Outcomes
 - Understood the fundamentals of AI agents.
